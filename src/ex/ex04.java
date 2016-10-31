@@ -5,11 +5,25 @@
  * Author: 105021033 黃苡珊
  */
 
+import java.util.Scanner;
+
 public class ex04 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Scanner scn = new Scanner(System.in);
+		System.out.println("請問要輸入幾個資料");
+		int n = scn.nextInt();
+		int data[] = new int[n];
+		for (int i = 0; i < n; i++) {
+			data[i] = scn.nextInt();
+		}
+		square(data, n);
 	}
 
+	public static void square(int square[], int o) {
+		for (int i = 0; i < o; i++) {
+			System.out.print(square[i] * square[i] + "\t");
+
+		}
+	}
 }
